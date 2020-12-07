@@ -143,7 +143,7 @@ function removeGradesBelow50()
   {
       if(grades[i]<50)
     {
-        grades.splice(i-1,i);
+        grades.splice(i,1);
     }
   }
   // Remove all grades that are below 50.
