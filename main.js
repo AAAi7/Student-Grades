@@ -139,11 +139,14 @@ function decreaseGradesBy10() {
 
 function removeGradesBelow50() 
 {
-    for(let i=0;i<grades.length;i++)
+  let b=grades.length;
+    for(let i=0;i<b;i++)
   {
       if(grades[i]<50)
     {
         grades.splice(i,1);
+        i--;
+        b--;
     }
   }
   // Remove all grades that are below 50.
